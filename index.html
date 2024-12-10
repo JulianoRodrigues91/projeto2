@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/imagens/pngtree-calling-telephone-line-icon-vector-png-image_5199539.jpg" alt="logo contato" >
+            <h1>Lista de Contatos</h1>
+        </header>
+        <form id="form-contato">
+            <input type="text" id="nome-contato" placeholder="Nome contato" required />
+            <input type="tel" id="numero-contato" placeholder="DDD+telefone" pattern="[0-9]{10,11}" />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Nome contato
+                    </th>
+                    <th>
+                        Telefone
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome</td>
+                    <td>Telefone</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
